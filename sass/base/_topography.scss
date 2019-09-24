@@ -42,3 +42,62 @@
     font-size: 3.4rem;
   }
 }
+
+.social__linkedin {
+  color: #0e76a8;
+}
+.social__gmail {
+  color: #D44638;
+}
+.social__link{
+  &,
+  &:link,
+  &:visited {
+    color: $color-primary-dark;
+    text-decoration: none;    
+    display: inline-block;    
+    transition: all .2s;
+    position: relative;
+    
+  }
+  
+  &:hover,
+  &:focus {
+    animation-name: linkedin_link;
+    animation-duration: .3s;
+  }
+}
+
+.social__link {
+  &,
+  &:link,
+  &:visited {
+    color: $color-primary-dark;
+    text-decoration: none;    
+    display: inline-block;    
+    transition: all .2s;
+    position: relative;
+    
+  }
+  
+  &:hover,
+  &:focus {
+    animation-name: linkedin_link;
+    animation-duration: .3s;
+  }
+}
+
+@keyframes linkedin_link {
+  0% {
+    transform: rotate(-3deg);
+  }
+  30% {
+    transform: rotate(0deg);
+  }
+  60% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

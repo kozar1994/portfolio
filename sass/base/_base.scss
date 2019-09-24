@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+//  font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+  font-size: 31.25%;
+
+  @include respond(tab-768) {
+      font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
+  }
+
+  @include respond(tab-992) { // width < 900?
+      font-size: 50%; //1 rem = 8px, 8/16 = 50%
+  }
+  
+  
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  // font-size: 16px;
+  line-height: 1.7;
+  color: #777;
+  
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.container {
+  margin: auto;
+ 
+ 
+  width: 1200px; 
+  // width: 980px;
+
+  @include respond(tab-992) {
+    width: 992px;
+  }
+
+  @include respond(tab-768) {
+    width: 768px;
+  }
+
+  @include respond(tab-576) {
+    width: 576px;
+  }
+
+  @include respond(tab-575px) {
+    width: 320px;
+  }
+}
+
+
+section {
+  widows: 980px;
+  margin: auto;
+}
